@@ -1,0 +1,9 @@
+###MAKEFILE###
+
+all: prim
+
+prim:ep.o prim ep.o
+	gcc -o prim ep.o
+	
+ep.o:ep.c
+	gcc -c ep.c
